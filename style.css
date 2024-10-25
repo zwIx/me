@@ -97,8 +97,7 @@ button {
     transform: translate(-50%, -50%);
     justify-content: center; /* Center horizontally */
     align-items: center;
-    border: 2px solid;
-    border-radius: 70px;
+
     min-height: 1000px;
     height: auto; /* Adjust height to content */
     width: 900px; /* Ensure width matches the To Do section */
