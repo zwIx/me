@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Osama</title>
+        <link rel="icon" href="os.jpeg">
+        <link rel="stylesheet" href="mult.css">
+ 
+    </head>
+    <body class="p">
+        <div id="cards">
+        <p id="head">حل المسألة التالية</p>
+        <div id="mult">
+            <p id="one"></p><pre> X </pre><p id="two"></p>
+        </div>
+        <div id="IN"><input type="text" placeholder="...أدخل إجابتك هنا" id="in"></div>
+        <div id="but">
+            <button onclick="checkAnswer(), random()"class="button" id="j">تحقق</button>
+            <button onclick="random(), showmult(), showIn(), showj(), hidei()"
+            class="button" id="i">ابدأ</button>
+        </div>          
+        
+        </div>
+        <script>
+            let correctAnswer = 0;
+            let counter = 0;
+            let rigth = 0;
+            
+            function random() {
+                const num1 = Math.floor(Math.random() * 10);
+                const num2 = Math.floor(Math.random() * 10);
+                document.getElementById("one").innerHTML = num1;
+                document.getElementById("two").innerHTML = num2;
+                correctAnswer = num1 * num2;
+            }
+            
+            function showmult() {
+                document.getElementById('mult').style.display = 'flex';
+            }
+            function showj() {
+                document.getElementById('j').style.display = 'flex';
+            }
+            function hidei() {
+                document.getElementById('i').style.display = 'none';
+            }
+            
+            function showIn() {
+                document.getElementById('IN').style.display = 'flex';
+                // Add event listener for the Enter key
+                document.getElementById('in').addEventListener('keypress', function(event) {
+                    if (event.key === 'Enter') {
+                        checkAnswer(); // Call checkAnswer function on Enter key press
+                    }
+                });
+            }
+            
+            function checkAnswer() {
+                const userAnswer = parseInt(document.getElementById("in").value);
+                if (userAnswer === correctAnswer) {
+                    alert("إجابة صحيحة!");
+                    rigth+=1
+                } else {
+                    alert("إجابة خاطئة! حاول مرة أخرى.");
+                }
+                document.getElementById("in").value = ""; }
+                </script>
+    </body>
+</html>
