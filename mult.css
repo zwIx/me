@@ -1,0 +1,66 @@
+.p{
+    background-color: #e6f5e6;
+    font-family: 'Droid Arabic Kufi', serif;
+    font-size: 40px;
+    justify-content: center;    align-items: center;
+
+}
+#cards{
+    display: block;
+    border: 2px solid #001f00;border-radius: 10px;
+    height: 500px;width: 500px;
+    margin-left: 700px;
+    margin-top: 200px;   
+    align-items:  firstbaseline;
+    padding-top: 20px ;
+    padding: 0px;}
+#head{
+    height: fit-content;
+    font-family: 'Droid Arabic Kufi', serif;
+    font-size: 40px; color:#001f00 ;
+    padding-left: 150px;}
+#mult{
+    display: none;
+    margin-top: 50px; padding-left: 40px;
+    height: 80px;
+    justify-content: center;    align-items: center;}
+
+#IN{
+    display: none;
+    margin-top: 20px; padding-left: 40px;
+    justify-content: center;    align-items: center;}
+
+#in{ 
+    height: 45px; 
+    background-color: transparent;
+    outline: none; margin-bottom: 15px;
+    border: 2px solid #001f00; border-radius: 10px;
+    padding-left: 50px;    font-size: 30px;
+}
+#but{
+    display: flex;
+    height: 50px;
+    justify-content: center;}
+
+.button{
+    font-family: serif;    font-weight: 300;
+    color: #001f00;    font-size: 25px;
+    margin-left: 40px;  width: 100px;
+    background-color: transparent; height: 45px;
+    border: 2px solid #001f00;    cursor: pointer;
+    border-radius: 7px;}
+.button:hover {
+    color: #e6f5e6;
+    background-color: #001f00;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);}
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);}
+#i{
+    display: block;
+}
+#j{
+    padding-left: 25px;
+    display: none;
+}
