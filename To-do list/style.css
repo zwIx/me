@@ -1,0 +1,107 @@
+#top {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+body{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold
+}
+button {
+    margin-bottom: 10px;
+    outline: none;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 21px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-1 {
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+     box-shadow:
+     -7px -7px 20px 0px #ffffff99,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+#inputContainer {
+    margin: 20px;
+    display: none; 
+    align-items: center; 
+}
+#taskInput {
+    height: 25px;
+    font-size: 20px; 
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+#todo {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    border: 2px solid;
+    height: auto; /* Adjust height to content */
+    width: 400px;
+    border-radius: 20px;
+    line-height: 35px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+
+.tasks {
+    font-size: larger;
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space between the two sections */
+    text-align: left;
+}
+.tasks ul{
+    font-size: large;
+
+}
+
+#pr {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    border: 2px solid;
+    min-height: 800px;
+    height: auto; /* Adjust height to content */
+    width: 400px; /* Ensure width matches the To Do section */
+    border-radius: 20px;
+    line-height: 35px;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+
+#all{
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Move down 50% of the viewport height */
+    left: 50%; /* Move right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+    min-height: 1000px;
+    height: auto; /* Adjust height to content */
+    width: 900px; /* Ensure width matches the To Do section */
+    justify-content: center;
+    text-align: center;
+
+}
